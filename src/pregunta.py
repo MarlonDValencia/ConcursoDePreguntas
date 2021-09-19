@@ -48,10 +48,8 @@ class pregunta:
     
   def validateQuestion(self,question,Answer):
     if question.correctOption == Answer:
-      print("Correcto!")
       return True
     else:
-      print("Falso!")
       return False
       
 

@@ -6,7 +6,7 @@ Qué personaje fue conocido como el rey de Macedonia, fue discípulo de Aristót
 De qué ciudad es el Chelsea Football Club?;Deportes;Bristol;Cambridge;Manchester;Londres.
 Qué jugador de la NBA ha ganado más campeonatos en la historia?;Deportes;Lebron James;Kevin Durant;Michael Jordan;Bill Russell
 Cuál ha sido el único tenista en ganar los cuatro títulos del Grand Slam en el mismo año en dos ocasiones?;Deportes;Rafael Nadal;Roger Federer;Novak Djokovic;Rod Laver
-Quién fue el boxeador más joven de la historia en conseguir un título mundial de los pesos pesados?;Category4;Muhammad Ali;Floyd Mayweather, Jr;Evander Holyfield;Mike Tyson
+Quién fue el boxeador más joven de la historia en conseguir un título mundial de los pesos pesados?;Deportes;Muhammad Ali;Floyd Mayweather, Jr;Evander Holyfield;Mike Tyson
 Cuál es el deportista con mayor numero de medallas olimpicas?;Deportes;Usain Bolt;Carl Lewis;Larisa Latynina;Michael Phelps
 Cuál es el lugar más frío de la tierra?;General;El ártico;El polo norte;Groenlandia;La Antártida
 Qué tipo de animal es la ballena?;General;Pez;Anfibio;Celentereos;Mamífero

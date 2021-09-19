@@ -6,23 +6,36 @@ class jugador:
   def setScore(self,points):
     self.score += points
   
-  def newPlayer(self):
-      while(True):
-        print("Ingresa el nombre de usuario deseado")
-        name = input()
-        ruta = "users/"+name.lower()+".txt"
-        if os.path.exists(ruta):
-          print("Ese nombre de usuario ya está registrado, por favor intenta con otro")
-        else:
-          file = open(ruta,"w")
-          print("Usuario creado exitosamente")
-          break
-
-  def validatePlayer(self,name):
+  def newPlayer(self,name):
+    self.userName = name
     ruta = "users/"+name.lower()+".txt"
     if os.path.exists(ruta):
-      print("Bienvenido de nuevo, "+name+"!")
+      return False
+    else:
+      file = open(ruta,"w")
+      return True
+
+  def validatePlayer(self,name):
+    self.userName = name
+    ruta = "users/"+name.lower()+".txt"
+    if os.path.exists(ruta):
       return(True)
     else:
-      print("Nombre de usuario no encontrado :(")
+      return(False)
+  
+  def gameInProgress(self):
+    self.userName = self.userName
+    ruta = "inProgress/"+(self.userName).lower()+".txt"
+    if os.path.exists(ruta):
+      return(True)
+    else:
+      return(False)
+  
+  def removeProgress(self):
+    self.userName = self.userName
+    ruta = "inProgress/"+(self.userName).lower()+".txt"
+    if os.path.exists(ruta):
+      os.remove(ruta)
+      return(True)
+    else:
       return(False)
