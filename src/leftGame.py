@@ -2,9 +2,9 @@ import os
 import sys
 from src.game import *
 from src.jugador import *
-class lostGame():
+class leftGame():
   def __init__(self,jugador,game):
-    ruta = "inProgress/"+jugador.userName+".txt"
+    ruta = "inProgress/"+(jugador.userName).lower()+".txt"
     f = open(ruta,"a")
     text = jugador.userName+";"+str(jugador.score)+";"+str(game.ronda)+";"+"notFinished"+"\n"
     f.write(text)

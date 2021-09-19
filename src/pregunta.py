@@ -16,6 +16,8 @@ class pregunta:
   option3 = ""
   correctOption = ""
 
+#Para crear una nueva Pregunta se debe ingresar su categoria, su enunciado y todas sus opciones de respuesta, incluída la respuesta correcta
+
   def __init__(self,statement,category,option1,option2,option3,correctOption):
     self.statement = statement
     self.category = category
@@ -23,6 +25,8 @@ class pregunta:
     self.option2 = option2
     self.option3 = option3
     self.correctOption = correctOption
+
+#Almacena el banco de preguntas y retorna una pregunta aleatoria de una categoría especifica dependiendo de la Ronda
 
   def generateNewQuestion(self,ronda):
     f = open("questions/questions.txt","r",encoding = "utf8")
@@ -45,13 +49,14 @@ class pregunta:
       return questions[random.randrange(15,20,1)]
     elif(ronda == 4):
       return questions[random.randrange(20,25,1)]
-    
+
+#Valida si la respuesta ingresada es la correcta
   def validateQuestion(self,question,Answer):
     if question.correctOption == Answer:
       return True
     else:
       return False
       
-
+#Retorna la pregunta y sus opciones de respuesta
   def showQuestion(self,question):
     return [question.statement,question.option1,question.option2,question.option3,question.correctOption]

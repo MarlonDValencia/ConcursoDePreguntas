@@ -1,6 +1,6 @@
 from src.pregunta import *
 from src.jugador import *
-from src.lostGame import *
+from src.leftGame import *
 import sys
 class game:
   ronda = 0
@@ -8,13 +8,15 @@ class game:
   def __init__(self):
     return None;
   #La función startGame recibe un objeto de tipo jugador como parametro.
-
   def startGame(self,jugador,ronda):
     self.ronda = ronda
     while(True):
       aux = []
       self.ronda += 1
+      #Creamos un objeto de tipo Pregunta para acceder a los métodos de dicha clase
       preguntaAux = pregunta("","","","","","")
+      #Se genera una nueva pregunta, le pasamos como parametro la ronda actual de juego para
+      #que así el programa muestre una pregunta aleatoria de la categoría asociada a dicha ronda.
       currentQuestion = preguntaAux.generateNewQuestion(self.ronda)
       aux.append(currentQuestion.option1)
       aux.append(currentQuestion.option2)
@@ -23,6 +25,7 @@ class game:
       A = currentQuestion.showQuestion(currentQuestion)
       A1 = A[1:5]
       random.shuffle(A1)
+      #Almacenamos la pregunta y mostramos su enunciado y sus opciones de respuesta en desorden(aleatorio)
       print("*****************************************************************")
       print(f"Ronda #{str(self.ronda)}, la categoría es {currentQuestion.category}.")
       print("*****************************************************************")
@@ -32,25 +35,27 @@ class game:
       print(f"0. Salir del juego (Se guardará tu progreso en la ronda {str(self.ronda)})")
       answer = input()
       if(answer == "0"):
-        juegoPerdido = lostGame(jugador,self)
+        juegoPerdido = leftGame(jugador,self) #En caso de que el usuario haya decidido salirse se llama a la clase leftGame para almacenar el progreso de dicha partida
         sys.exit()
+      #Se llama a al metodo validaQuestion de la clase Pregunta para así poder determinar si la respuesta fue correcta
       elif(not currentQuestion.validateQuestion(currentQuestion,A1[int(answer)-1])):
         print("Falso!")
-        jugador.removeProgress()
+        jugador.removeProgress()#Sí el jugador pierde se elimina su progreso, así que la proxima vez que juegue tiene que empezar desde la ronda 1
         return self.ronda
       else:
-        jugador.score = (self.ronda*2)*1000
-        print(f"Correcto!, tu puntaje hasta el momento es de {jugador.score}")
+        jugador.score = (self.ronda*2)*1000 #Cada ronda tiene un premio diferente, claramente la ronda 5, por ser la de mayor dificultad tiene un premio mayor
+        print(f"Correcto!, tu puntaje hasta el momento es de {jugador.score}") 
       if(self.ronda == 5 and currentQuestion.validateQuestion(currentQuestion,A1[int(answer)-1])):
-        jugador.removeProgress()
+        jugador.removeProgress()#Sí el jugador gana se elimina su progreso, así que la proxima vez que juegue debe empezar desde cero
         return False
   
   def resumeGame(self,player):
+    #Este metodo busca en la base de datos si hay algún juego en progreso asociado al jugador que se le haya pasado como parametro
     ruta = "inProgress/"+(player.userName).lower()+".txt"
     f=open(ruta,"r")
     lastMatch = f.readlines()[-1]
     previousRound = lastMatch.split(";")
-    return int(previousRound[2])
+    return int(previousRound[2]) #Retorna la ronda en la cual se quedó el jugador la ultima vez que jugó
 
   def quitGame(self):
-    sys.exit()
+    sys.exit() #Cierra el juego
