@@ -38,7 +38,7 @@ class game:
         if(answer == 0):
           juegoPerdido = leftGame(jugador,self) #En caso de que el usuario haya decidido salirse se llama a la clase leftGame para almacenar el progreso de dicha partida
           sys.exit()
-        elif(answer > 4 or answer < 0):
+        elif(answer!=1 or answer!=2 or answer!=3 or answer!=4 or answer!=5):
           print("Por favor, ingresa una opción válida")
         #Se llama a al metodo validaQuestion de la clase Pregunta para así poder determinar si la respuesta fue correcta
         elif(not currentQuestion.validateQuestion(currentQuestion,A1[int(answer)-1])):
