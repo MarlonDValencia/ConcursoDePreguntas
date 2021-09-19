@@ -1,0 +1,25 @@
+En qué lugar hay actualmente pinturas del mesolítico?;Historia;Alemania;Argentina;Croacia;España
+Cuál es el periodo más largo de la humanidad en el que aparecieron los primeros seres semejantes a los hombres?;Historia;El periodo neolítico;La edad de piedra;El periodo mesolítico;La prehistoria
+Alrededor de que mar vivieron los egipcios, fenicios, israelitas, griegos y romanos?;Historia;Mar Muerto;Mar Caríbe;Mar Negro;Mar Mediterraneo
+Que arte nació en la ciudad griega de Atenas en el año de 536 a.C?;Historia;El canto;La poesía;La trova;El teatro
+Qué personaje fue conocido como el rey de Macedonia, fue discípulo de Aristóteles y encabezó el imperio Helenístico?;Historia;Napoleón Bonaparte;Cristobal Colón;Luis XVIII de Francia;Alejandro Magno
+De qué ciudad es el Chelsea Football Club?;Deportes;Bristol;Cambridge;Manchester;Londres.
+Qué jugador de la NBA ha ganado más campeonatos en la historia?;Deportes;Lebron James;Kevin Durant;Michael Jordan;Bill Russell
+Cuál ha sido el único tenista en ganar los cuatro títulos del Grand Slam en el mismo año en dos ocasiones?;Deportes;Rafael Nadal;Roger Federer;Novak Djokovic;Rod Laver
+Quién fue el boxeador más joven de la historia en conseguir un título mundial de los pesos pesados?;Deportes;Muhammad Ali;Floyd Mayweather, Jr;Evander Holyfield;Mike Tyson
+Cuál es el deportista con mayor numero de medallas olimpicas?;Deportes;Usain Bolt;Carl Lewis;Larisa Latynina;Michael Phelps
+Cuál es el lugar más frío de la tierra?;General;El ártico;El polo norte;Groenlandia;La Antártida
+Qué tipo de animal es la ballena?;General;Pez;Anfibio;Celentereos;Mamífero
+Quién pintó “la última cena”?;General;Miguel Angel;Vincent van Gogh;Salvador Dalí;Leonardo da Vinci
+En qué país se encuentra la torre de Pisa?;General;El Vaticano;Mónaco;Francia;Italia
+Cuál es el océano más grande?;General;Océano Atlántico;Océano Ártico;Océano Índico;Océano Pacífico
+Cuál es la película con mayor recaudo de la historia?;Entretenimiento;Avengers:Endgame;Titanic;Fast and furious 7;Avatar
+Cuál es el actor mas millonario del mundo (2021)?;Entretenimiento;Shahrukh Khan;Tom Cruise;Jerry Seinfeld;Tyler Perry
+Cómo se suele llamar a la animación de un manga?;Entretenimiento;Manwa;Serie;Cartoon;Ánime
+Cuál es la actuación más famosa de Will Smith?;Entretenimiento;Ali;Bucket List;Enmienda;El príncipe de Bel-Air
+Cuál es la productora cinematográfica más grande del mundo?;Entretenimiento;Universal Pictures;20thCentury Fox;Walt Disney Pictures;Warner Bros
+En qué país se ubican las ruinas de Esparta?;Geografía;Slovenia;Ucrania;Italia;Grecia
+Cuál de estos países no tiene acceso al Mar Mediterráneo?;Geografía;Eslovenia;Chipre;Egipto;Serbia
+Cuál es el rió más largo del mundo?;Geografía;Rio Yangtsé;Rio Amazonas;Rio Amarillo;Rio Nilo
+Qué país es el segundo más grande del mundo en términos de población?;Geografía;Indonesia;China;Rusia;India
+Qué capital está más al norte del planeta;Geografía;Moscú;Oslo;Estocolmo;Reikiavik
