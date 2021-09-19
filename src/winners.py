@@ -1,6 +1,7 @@
 import os
 ganadores = []
 dictWinners = {}
+#Retorna un diccionario con todos los ganadores y las veces que hayan ganado
 class winners():
   def ganadores(self):
     carpeta = "winners"
