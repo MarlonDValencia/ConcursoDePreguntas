@@ -43,7 +43,7 @@ class game:
           print("Falso!")
           jugador.removeProgress()#Sí el jugador pierde se elimina su progreso, así que la proxima vez que juegue tiene que empezar desde la ronda 1
           return self.ronda
-        elif(answer> 4 or answer< 1):
+        elif(answer > 4 or answer < 0):
           print("Por favor, ingresa una opción válida")
         else:
           jugador.score = (self.ronda*2)*1000 #Cada ronda tiene un premio diferente, claramente la ronda 5, por ser la de mayor dificultad tiene un premio mayor
