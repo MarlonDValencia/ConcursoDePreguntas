@@ -8,7 +8,7 @@ Para ejecutar el programa se debe tener instalado python3, posteriormente de ase
 
 La carpeta del proyecto cuenta con 7 elementos (5 Carpetas y dos archivos).
 
-Para insertar la opción elegido se debe poner el número y presionar la tecla Enter.
+Para insertar la opción elegida se debe poner el número y presionar la tecla Enter.
 
 ## Pantalla Inicial
 En la primera pantalla verás tres opciones: 
