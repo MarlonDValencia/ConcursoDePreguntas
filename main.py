@@ -28,7 +28,7 @@ def jugar(player):
       ronda = (juego.resumeGame(player))-1
       player.setScore((ronda*2)*1000)
       resultado(juego,player,ronda)
-    else:
+      else:
       juego = game()
       resultado(juego,player,0)
 
@@ -37,6 +37,7 @@ print("Hola!, Bienvenido al concurso de preguntas, qué quieres hacer.")
 print("1. Crear un nuevo usuario.")
 print("2. Ingresar con un usuario existente.")
 print("3. Ver la lista de ganadores")
+print("0. Salir")
 print("Ingresa qué opción eliges: ")
 
 while(True):
