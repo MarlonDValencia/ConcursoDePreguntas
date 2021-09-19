@@ -38,13 +38,13 @@ class game:
         if(answer == 0):
           juegoPerdido = leftGame(jugador,self) #En caso de que el usuario haya decidido salirse se llama a la clase leftGame para almacenar el progreso de dicha partida
           sys.exit()
-        elif(answer!=1 or answer!=2 or answer!=3 or answer!=4 or answer!=5):
-          print("Por favor, ingresa una opción válida")
         #Se llama a al metodo validaQuestion de la clase Pregunta para así poder determinar si la respuesta fue correcta
         elif(not currentQuestion.validateQuestion(currentQuestion,A1[int(answer)-1])):
           print("Falso!")
           jugador.removeProgress()#Sí el jugador pierde se elimina su progreso, así que la proxima vez que juegue tiene que empezar desde la ronda 1
           return self.ronda
+        elif(answer> 4 or answer< 1):
+          print("Por favor, ingresa una opción válida")
         else:
           jugador.score = (self.ronda*2)*1000 #Cada ronda tiene un premio diferente, claramente la ronda 5, por ser la de mayor dificultad tiene un premio mayor
           print(f"Correcto!, tu puntaje hasta el momento es de {jugador.score}") 
