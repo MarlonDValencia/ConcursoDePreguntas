@@ -17,7 +17,7 @@ La carpeta del proyecto cuenta con 7 elementos (5 Carpetas y dos archivos).
 
 Para insertar la opción elegido se debe poner el número y presionar la tecla Enter.
 
-### Carpetas
+## Carpetas
 La carpeta inProgress contiene los juegos sin terminar de los usuarios que hayan guardado su progreso en medio de la partida.
 
 La carpeta Questions contiene el banco de preguntas y sus respuestas(tres incorrectas y una correcta).
@@ -28,10 +28,10 @@ La carpeta users contiene la base de datos de usuarios registrados.
 
 La carpeta winners contiene la base de datos de los jugadores que hayan terminado el juego en sus 5 rondas.
 
-### Archivos
+## Archivos
 El archivo Jugar.bat es el ejecutable que inicia el juego y muestra por pantalla el desarrollo de la partida dependiendo de las opciones seleccionadas por el usuario.
 
 El archivo main.py es el archivo que contiene la pantalla inicial del juego (No abrir para jugar, abrir el archivo Jugar.bat).
 
-### Código Fuente
+## Código Fuente
 El código fuente cuenta con comentarios en todas las funciones definidas para dejar claro qué acción realizan.
