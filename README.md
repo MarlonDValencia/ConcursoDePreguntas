@@ -3,7 +3,7 @@ Repositorio para modelar el reto del concurso de preguntas (SOFKA)
 
 Para modelar el proyecto se usaron conceptos de OOP (Programación orientada a objetos), como clases, instancias, referencias a la instancia actual, métodos, atributos, etc..., el código está escrito en su totalidad en Python3.
 
-## PantallaInicial
+## Pantalla Inicial
 En la primera pantalla verás tres opciones: 
 1. Crear un nuevo usuario: Luego de validar que no existe otro jugador con el nombre ingresado. crea un nuevo usuario con el nombre que ingreses.
 2. Ingresar con un nuevo usuario: Iniciar sesión con un jugador que ya esté registrado en la base de datos
