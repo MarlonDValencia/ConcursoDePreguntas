@@ -3,6 +3,13 @@ Repositorio para modelar el reto del concurso de preguntas (SOFKA)
 
 Para modelar el proyecto se usaron conceptos de OOP (Programación orientada a objetos), como clases, instancias, referencias a la instancia actual, métodos, atributos, etc..., el código está escrito en su totalidad en Python3.
 
+## PantallaInicial
+En la primera pantalla verás tres opciones: 
+1. Crear un nuevo usuario: Luego de validar que no existe otro jugador con el nombre ingresado. crea un nuevo usuario con el nombre que ingreses.
+2. Ingresar con un nuevo usuario: Iniciar sesión con un jugador que ya esté registrado en la base de datos
+3. Ver la lista de ganadores: Despliega por pantalla los usuarios que han ganado y el número de veces que hayan ganado
+0. Salir: Cierra el programa
+
 ## Contenido 
 Para ejecutar el programa se debe tener instalado python3, posteriormente de asegurarse que tiene instalado Python3 en su equipo, abrir el ejecutable Jugar.bat e ingresar la opción correspondiente a la acción que quiere realizar (asegurarse de usar valores enteros).
 
