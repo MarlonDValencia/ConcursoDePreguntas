@@ -34,9 +34,8 @@ class game:
         print(f"{i+1}.",A1[i].rstrip("\n"))
       print(f"0. Salir del juego (Se guardará tu progreso en la ronda {str(self.ronda)})")
       while(True):
-        answer = input()
-        answer = int(answer)
-        if(answer == "0"):
+        answer = int(input())
+        if(answer == 0):
           juegoPerdido = leftGame(jugador,self) #En caso de que el usuario haya decidido salirse se llama a la clase leftGame para almacenar el progreso de dicha partida
           sys.exit()
         elif(answer > 4 or answer < 0):
@@ -49,6 +48,7 @@ class game:
         else:
           jugador.score = (self.ronda*2)*1000 #Cada ronda tiene un premio diferente, claramente la ronda 5, por ser la de mayor dificultad tiene un premio mayor
           print(f"Correcto!, tu puntaje hasta el momento es de {jugador.score}") 
+          break
         if(self.ronda == 5 and currentQuestion.validateQuestion(currentQuestion,A1[int(answer)-1])):
           jugador.removeProgress()#Sí el jugador gana se elimina su progreso, así que la proxima vez que juegue debe empezar desde cero
           return False
