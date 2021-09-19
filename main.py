@@ -28,7 +28,7 @@ def jugar(player):
       ronda = (juego.resumeGame(player))-1
       player.setScore((ronda*2)*1000)
       resultado(juego,player,ronda)
-      else:
+    else:
       juego = game()
       resultado(juego,player,0)
 
