@@ -4,6 +4,7 @@ from src.jugador import *
 from src.game import *
 from src.wonGame import *
 from src.lostGame import *
+print("***************************************************************")
 print("Hola!, Bienvenido al concurso de preguntas, qué quieres hacer.")
 print("1. Crear un nuevo usuario.")
 print("2. Ingresar con un usuario existente.")

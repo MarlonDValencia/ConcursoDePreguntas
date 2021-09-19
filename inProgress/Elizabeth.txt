@@ -1,2 +1,0 @@
-Elizabeth;6000;4;notFinished
-Elizabeth;4000;3;notFinished

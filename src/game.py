@@ -23,7 +23,9 @@ class game:
       A = currentQuestion.showQuestion(currentQuestion)
       A1 = A[1:5]
       random.shuffle(A1)
+      print("*****************************************************************")
       print(f"Ronda #{str(self.ronda)}, la categoría es {currentQuestion.category}.")
+      print("*****************************************************************")
       print(A[0])
       for i in range(4):
         print(f"{i+1}.",A1[i].rstrip("\n"))

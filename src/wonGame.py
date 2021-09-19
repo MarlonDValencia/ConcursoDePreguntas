@@ -10,12 +10,14 @@ class wonGame(game):
       text = str(jugador.score)+";"+jugador.userName+"\n"
       f.write(text)
       f.close()
-      print (f"Felicidades {jugador.userName}, ganaste! 30000 Puntos han sido añadidos a tu registro!")
+      print ("*****************************************************************************************")
+      print (f"Felicidades {jugador.userName}, ganaste! 10000 Puntos han sido añadidos a tu registro!")
     else:
       f = open(ruta,"w")
       text = str(jugador.score)+";"+jugador.userName+"\n"
       f.write(text)
       f.close()
-      print (f"Felicidades {jugador.userName}, ganaste! has sido añadido al registro de ganadores con 30000 puntos")
+      print ("****************************************************************************************************")
+      print (f"Felicidades {jugador.userName}, ganaste! has sido añadido al registro de ganadores con 10000 puntos")
     return None
 
