@@ -37,10 +37,9 @@ class game:
         jugador.removeProgress()
         return self.ronda
       else:
-        jugador.score = (self.ronda*2)*1000
+        jugador.score += self.ronda*100
         print(f"Correcto!, tu puntaje hasta el momento es de {jugador.score}")
       if(self.ronda == 5 and currentQuestion.validateQuestion(currentQuestion,A1[int(answer)-1])):
-        jugador.removeProgress()
         return False
   
   def resumeGame(self,player):
